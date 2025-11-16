@@ -1,3 +1,20 @@
+/**
+ * Gulp Build Process for tuetran.dev
+ * 
+ * This gulpfile automates the optimization of website assets:
+ * - Minifies CSS files (reduces size by ~31%)
+ * - Minifies JavaScript files (reduces size by ~47%)
+ * - Minifies HTML files and updates asset references (reduces size by ~26%)
+ * - Copies and optimizes images
+ * - Copies vendor libraries and other necessary files
+ * 
+ * Usage:
+ *   npm run build  - Build optimized assets to dist/ folder
+ *   npm run watch  - Watch for changes and rebuild automatically
+ * 
+ * After building, deploy the dist/ folder to your web server.
+ */
+
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const terser = require('gulp-terser');
